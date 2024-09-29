@@ -48,10 +48,18 @@ public class A1 implements Servlet{
             ps.setString(2, name);
             int r = ps.executeUpdate();
             System.out.println(r+" row inserted!");
+            connection.close();
         }catch(Exception e)
         {
             System.out.println(e);
         }
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<title>Response</title>");
+        out.println("</head>");
+        out.println("<body>");
         out.println("<h1>Dear "+name+" Your Data id Stored Successfully!</h1>");
+        out.println("</body>");
+        out.println("</html>");
     }
 }
