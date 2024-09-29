@@ -1,0 +1,11 @@
+.container{
+    height: 30vh;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 20vh auto;
+    text-align: center;
+}
+.box{
+    padding: 10px;
+}
