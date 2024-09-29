@@ -5,12 +5,12 @@
    <welcome-file-list>
     <welcome-file>index.html</welcome-file>
    </welcome-file-list>
-   <servlet>
+   <!-- <servlet>
     <servlet-name>a1</servlet-name>
     <servlet-class>com.example.A1</servlet-class>
    </servlet>
    <servlet-mapping>
     <servlet-name>a1</servlet-name>
     <url-pattern>/a1</url-pattern>
-   </servlet-mapping>
+   </servlet-mapping> -->
 </web-app>

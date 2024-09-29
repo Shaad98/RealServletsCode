@@ -1,8 +1,11 @@
 package com.example;
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebServlet;
+
 // import jakarta.servlet.http.*;
 import java.io.*;
 import java.sql.*;
+@WebServlet(name="a1",urlPatterns = {"/a1"})
 public class A1 implements Servlet{
     ServletConfig config;
     @Override
