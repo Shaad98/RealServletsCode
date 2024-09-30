@@ -14,22 +14,4 @@
     <url-pattern>/a1</url-pattern>
    </servlet-mapping> -->
 
-   <servlet>
-      <servlet-name>exampleXml</servlet-name>
-      <servlet-class>com.initParameters.ExampleXml</servlet-class>
-      <init-param>
-            <param-name>message</param-name>
-            <param-value>Welcome To Our Web Application!</param-value>
-      </init-param>
-      <init-param>
-            <param-name>secondMessage</param-name>
-            <param-value>How We Can Help You?</param-value>
-      </init-param>
-   </servlet>
-
-   <servlet-mapping>
-      <servlet-name>exampleXml</servlet-name>
-      <url-pattern>/eow</url-pattern>
-   </servlet-mapping>
-
 </web-app>

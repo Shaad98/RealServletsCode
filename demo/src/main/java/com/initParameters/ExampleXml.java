@@ -1,8 +1,15 @@
 package com.initParameters;
 import java.io.*;
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebInitParam;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-
+@WebServlet(name = "eow" , urlPatterns = {"/eow"},
+            initParams = {
+                @WebInitParam(name="message",value = "Welcome To Our Web Application!"),
+                @WebInitParam(name = "secondMessage",value = "How We Can Help You?")
+            }
+    )
 public class ExampleXml extends HttpServlet{
     ServletConfig config;
     public void init(ServletConfig config) throws ServletException
