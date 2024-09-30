@@ -3,7 +3,7 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
    <welcome-file-list>
-    <welcome-file>reqFor.html</welcome-file>
+    <welcome-file>initParameter.html</welcome-file>
    </welcome-file-list>
    <!-- <servlet>
     <servlet-name>a1</servlet-name>
@@ -13,4 +13,23 @@
     <servlet-name>a1</servlet-name>
     <url-pattern>/a1</url-pattern>
    </servlet-mapping> -->
+
+   <servlet>
+      <servlet-name>exampleXml</servlet-name>
+      <servlet-class>com.initParameters.ExampleXml</servlet-class>
+      <init-param>
+            <param-name>message</param-name>
+            <param-value>Welcome To Our Web Application!</param-value>
+      </init-param>
+      <init-param>
+            <param-name>secondMessage</param-name>
+            <param-value>How We Can Help You?</param-value>
+      </init-param>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>exampleXml</servlet-name>
+      <url-pattern>/eow</url-pattern>
+   </servlet-mapping>
+
 </web-app>
