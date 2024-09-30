@@ -26,6 +26,7 @@ public class A3 extends HttpServlet{
             ps.setString(3, upassword);
             int r = ps.executeUpdate();
             System.out.println(r+" row inserted!");
+            connection.close();
         }catch(Exception e)
         {
             System.out.println(e);

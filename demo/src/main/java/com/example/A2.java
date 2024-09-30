@@ -32,6 +32,7 @@ public class A2 extends GenericServlet{
             }
             out.println("</body>");
             out.println("</html>");
+            connection.close();
         }catch(Exception e)
         {
             System.out.println(e);
